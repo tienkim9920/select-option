@@ -1,0 +1,68 @@
+/* Select option */
+.form-input-option .input-option {
+    width: 100%;
+    padding: .5rem 1rem;
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    color: #777777;
+}
+
+.input-option:focus {
+    border: 1px solid #BE8637;
+}
+
+.wrapper-select-option {
+    position: relative;
+}
+
+.wrapper-select-option .form-input-option {
+    position: relative;
+}
+
+.form-input-option .ic-down-select {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.wrapper-select-option .list-items-option {
+    transform: translateY(-80px) scale(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    z-index: 3;
+    background: #fff;
+    width: 100%;
+}
+
+.wrapper-select-option .list-items-option.active {
+    transform: translateY(0px) scale(1) ;
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper-product-detail .list-items-option {
+    width: 100%;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 4%);
+}
+
+.list-items-option .items-option {
+    font-weight: 300;
+    font-size: 14px;
+    color: #777777;
+    padding: .6rem 1rem;
+    cursor: pointer;
+}
+
+.list-items-option .items-option.active {
+    background: #f3f3f3;
+}
+
+.list-items-option .items-option:hover {
+    background: #f3f3f3;
+}
